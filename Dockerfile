@@ -1,5 +1,7 @@
-FROM scratch
+#FROM scratch
+FROM alpine:latest 
 MAINTAINER mlycore <maxwell92@126.com>
-ADD echo /echo
-ENTRYPOINT ["/echo"]
+ADD echoserver /echoserver
+ADD Dockerfile /Dockerfiler
+ENTRYPOINT ["/echoserver"]
 
